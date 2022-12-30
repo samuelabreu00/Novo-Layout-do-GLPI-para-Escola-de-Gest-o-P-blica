@@ -1,0 +1,171 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamado</title>
+</head>
+<body>
+    <html lang="pt-BR">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/chamados.css">
+        <title>Chamados</title>
+    </head>
+    
+    <body>
+        <!-- cabeçalho -->
+        <header>
+            <div class="container-img-logo">
+                <a href=""><img src="./img/logo-egpce-branca.png" alt=""></a>
+            </div>
+    
+    
+            <div class="title-header">
+                <h1>Sistema de Suporte Técnico</h1>
+            </div>
+    
+            <div class="user">
+                <div><span>Nome de Usuário</span>
+                    <span> <a href=""><i class="fa-solid fa-right-from-bracket"></i></a></span>
+                </div>
+            </div>
+        </header>
+        <!-- cabeçalho end -->
+    
+        <!-- main -->
+        <main id="main-chamado">
+            <div class="container-form">
+                <div class="header">
+                    <div class="btn-voltar"><a href="processando-chamado.html">Voltar</a></div>
+                    <h4>titulo do chamado</h4>
+                </div>
+                <div class="content-form">
+                    <div class="section-processamento-menus">
+              
+                        <ul class="menus">
+                            <li><a href="processando-chamado.html">Processando Chamado</a></li>
+                            <li id="chamado"><a href="chamado.html">Chamado</a></li>
+                            <li><a href="avaliacao.html">Avaliação</a></li>
+                            <li><a href="historico.html">Histórico</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="central">
+                        <div>
+                            <label for="">Adicionar:</label>
+                            <ul>
+                                <li> <a href=""> Acompanhamento</a></li>
+                                <li><a href=""> Documento</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="section-historico">
+    
+    
+                        <div class="user">
+                            <div class="sobre">
+                                <div class="img-user"><i class="fa-solid fa-user"></i></div>
+                                <div class="nome-user">Valmir Cardoso</div>
+                            </div>
+    
+                            <div class="box-motivos">
+                                <div class="especificacoes">
+                                <h3>titulo do chamado</h3>
+                                <span></span>
+                                <h3>tipo de chamado</h3>
+                                <span></span>
+                                <h3>categoria</h3>    
+                                </div> <br>
+                                <p>ola, problema. preciso de soldador</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <center>
+                <div class="content-form-left">
+                
+                    <div class="inputs">
+                
+                        <div id="input-me">
+                            <br>
+                            <input list="me" id="sobre" name="me" placeholder="Este chamado me diz respeito?">
+                            <datalist id="me">
+                                <option value="Sim">
+                                <option value="Não">
+                            </datalist>
+                        </div>
+                
+                        <div id="input-remetente">
+                            <br>
+                            <input list="remetente" id="type-remetente" name="remetente" placeholder="O remetente deste chamado é">
+                            <datalist id="remetente">
+                                <option value="Remetente 1">
+                                <option value="Remetente 2">
+                                <option value="Remetente 3">
+                                <option value="Remetente 4">
+                                <option value="Remetente 5">
+                            </datalist>
+                        </div>
+                
+                
+                        <div id="input-tipo">
+                            <br>
+                            <input list="tipo" id="tipo-de-chamado" name="tipo" placeholder="Tipo de chamado">
+                            <datalist id="tipo">
+                                <option value="Tipo 1">
+                                <option value="Tipo 2">
+                                <option value="Tipo 3">
+                                <option value="Tipo 4">
+                                <option value="Tipo 5">
+                            </datalist>
+                        </div>
+                
+                        <div id="input-categoria">
+                            <br>
+                            <input list="categoria" id="tipo-de-categoria" name="categoria" placeholder="Escolha a categoria">
+                            <datalist id="categoria">
+                                <option value="Categoria 1">
+                                <option value="Categoria 2">
+                                <option value="Categoria 3">
+                                <option value="Categoria 4">
+                                <option value="Categoria 5">
+                            </datalist>
+                        </div>
+                
+                
+                        <div id="input-titulo">
+                            <br>
+                            <input type="text" id="titulo" placeholder="Título do seu Chamado">
+                        </div>
+                
+                        <div id="input-descricao">
+                            <br>
+                            <textarea rows="7" cols="50" id="descricao" placeholder="Descrição do seu Chamado"></textarea>
+                        </div>
+                
+                        <div id="input-file">
+                            <br>
+                            <input type="file" name="" id="file">
+                        </div>
+                
+                        <div class="button">
+                            <button type="submit" id="btn-enviar">Alterar e Salvar</button>
+                        </div>
+                
+                    </div>
+                </div>
+                </center> 
+            </div>
+        </main>
+        <!-- main end -->
+    
+    
+        <!-- scripts -->
+        <script src="https://kit.fontawesome.com/71797136fe.js" crossorigin="anonymous"></script>
+        <!-- scripts end -->
+</body>
+</html>

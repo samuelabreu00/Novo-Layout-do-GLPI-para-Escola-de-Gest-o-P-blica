@@ -1,0 +1,90 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/chamados.css">
+    <link rel="stylesheet" href="./styles/avaliacao.css">
+    <title>Avaliação</title>
+</head>
+
+<body>
+    <!-- cabeçalho -->
+    <header>
+        <div class="container-img-logo">
+            <a href=""><img src="./img/logo-egpce-branca.png" alt=""></a>
+        </div>
+
+
+        <div class="title-header">
+            <h1>Sistema de Suporte Técnico</h1>
+        </div>
+
+        <div class="user">
+            <div><span>Nome de Usuário</span>
+                <span> <a href=""><i class="fa-solid fa-right-from-bracket"></i></a></span>
+            </div>
+        </div>
+    </header>
+    <!-- cabeçalho end -->
+
+    <!-- main -->
+    <main id="main-processamento">
+        <div class="container-form">
+            <div class="header">
+            <div class="btn-voltar"><a href="processando-chamado.html">Voltar</a></div>
+            <h4>titulo do chamado</h4>
+            </div>
+            <div class="content-form">
+                <div class="section-processamento-menus">
+
+                    <ul class="menus">
+                        <li><a href="processando-chamado.html">Processando Chamado</a></li>
+                        <li><a href="chamado.html">Chamado</a></li>
+                        <li id="avaliacao"><a href="avaliacao.html">Avaliação</a></li>
+                        <li><a href="historico.html">Histórico</a></li>
+                    </ul> 
+                </div>
+                    <form >
+                        <div class="estrelas">
+                            <div>
+                            <input type="radio" id="vazio" name="estrela" value="" checked>
+                    
+                            <label for="estrela_um"><i class="fa-solid fa-star"></i></label>
+                            <input type="radio" id="estrela_um" name="estrela" value="1">
+                    
+                            <label for="estrela_dois"><i class="fa-solid fa-star"></i></label>
+                            <input type="radio" id="estrela_dois" name="estrela" value="2">
+                    
+                            <label for="estrela_tres"><i class="fa-solid fa-star"></i></label>
+                            <input type="radio" id="estrela_tres" name="estrela" value="3">
+                    
+                            <label for="estrela_quatro"><i class="fa-solid fa-star"></i></label>
+                            <input type="radio" id="estrela_quatro" name="estrela" value="4">
+                    
+                            <label for="estrela_cinco"><i class="fa-solid fa-star"></i></label>
+                            <input type="radio" id="estrela_cinco" name="estrela" value="5"><br><br>
+                                </div>
+
+                            <div class="box-motivos">
+                                <textarea name="" id="" cols="50" rows="5" placeholder="Digite Aqui..."></textarea>
+                                <input type="file">
+                            </div>
+                            
+                            <div class="buttons-avaliacao">
+                            <input type="reset" value="Limpar">
+
+                            <input type="submit" value="enviar">
+                            </div>
+                    
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>    
+        <script src="https://kit.fontawesome.com/71797136fe.js" crossorigin="anonymous"></script>
+    </main>
+        
+    </body>

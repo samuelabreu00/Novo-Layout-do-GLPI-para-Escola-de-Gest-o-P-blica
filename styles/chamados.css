@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(0deg, #008445, #1ca448) !important;
+}
+
+/* cabecalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    height: auto;
+}
+
+header .container-img-logo {
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+}
+
+header .container-img-logo img {
+    width: 5.5rem;
+}
+
+header .title-header {
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header .title-header h1{
+    color: #fff;
+}
+header .user {
+    border-radius: 3px;
+    transition: .3s;
+    color: #fff;
+}
+
+header .user>div {
+    display: flex;
+    align-items: center;
+}
+
+header .user span {
+    font-weight: bold;
+    padding: 0 .5rem;
+}
+
+header .user span>a {
+    color: #fff;
+    font-size: 1.4rem;
+    transition: .2s;
+}
+
+header .user span>a:hover {
+    color: gray;
+}
+
+/* cabecalho end */
+
+/* main */
+main#main-processamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+main#main-chamado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 1rem;
+}
+
+main .container-form{
+    width: auto;
+    background-color: #fff;
+    border-radius: .6rem;
+        box-shadow: 1px 2px 21px -6px rgba(0, 0, 0, 0.75);
+}
+main .container-form .header{
+    position: relative;
+}
+main .container-form .header .btn-voltar{
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    padding: .3rem;
+    border-radius: 6px;
+    transform: translateY(-50%);
+}
+main .container-form .header .btn-voltar a{
+    text-decoration: none; 
+}
+main .container-form .header .btn-voltar a:hover{
+    text-decoration: underline;
+}
+main .container-form .header h4{
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+    padding: 1rem;
+    color: #322153;
+    text-transform: uppercase;
+}
+main .container-form .content-form{
+    padding: 1rem;
+}
+main .container-form .content-form .section-processamento-menus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+main .container-form .content-form .section-processamento-menus span{
+        color: #322153;
+}
+main .container-form .content-form .section-processamento-menus ul{
+    display: flex;
+    align-items: center;
+}
+
+main .container-form .content-form .section-processamento-menus ul li#chamado, li#avaliacao, li#historico, li#processamento{
+    opacity: 1;
+        background-color: #fff;
+}
+main .container-form .content-form .section-processamento-menus ul li{
+    list-style: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.199);
+    border-left: 1px solid rgba(0, 0, 0, 0.199);
+    border-right: 1px solid rgba(0, 0, 0, 0.199);
+    margin-right: .2rem;
+    background-color: #f0f0f5;
+    padding: .5rem .8rem;
+    border-radius: 8px 8px 0 0;
+    transition: .3s;
+    opacity: .5;
+    position: relative;
+}
+
+main .container-form .content-form .section-processamento-menus ul li:hover{
+    opacity: 1;
+}
+main .container-form .content-form .section-processamento-menus ul li a{
+    text-decoration: none;
+    color: #322153;
+}
+main .container-form .content-form .central{
+    margin-top: 3rem;
+}
+main .container-form .content-form .central div{
+    display: flex;
+    gap: 0 1rem;
+}
+main .container-form .content-form .central div ul{
+    display: flex;
+    align-items: center;
+}
+main .container-form .content-form .central div ul li{
+    list-style: none;
+    margin-right: 1rem;
+}
+main .container-form .content-form .central div ul li a{
+    text-decoration: none;
+    background-color: rgba(2, 142, 2, 0.658);
+    padding: .5rem;
+    color: #fff;
+    border-radius: 5px;
+    transition: .3s;
+}
+main .container-form .content-form .central div ul li a:hover{
+    opacity: .8;
+}
+main .container-form .content-form .section-historico{
+    margin-top: 3rem;
+}
+main .container-form .content-form .section-historico .user{
+    display: flex;
+    align-items: center;
+    gap: 0 2rem;
+    margin-top: 1rem;
+}
+main .container-form .content-form .section-historico .user .img-user{
+    font-size: 2rem;
+}
+main .container-form .content-form .section-historico .user .nome-user{
+    text-align: center;
+}
+main .container-form .content-form .section-historico .user .sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px 0;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    padding: .6rem;
+    border-radius: 4px;
+}
+main .container-form .content-form .section-historico .user .box-motivos{
+    background-color: #1ca44771;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    padding: .6rem;
+    border-radius: 6px;
+    width: 100%;
+}
+
+main .container-form .content-form .section-historico .user .box-motivos h3{
+    text-align: center;
+}
+ main .container-form .content-form-left {
+    
+    margin: 2rem 1rem 0;
+    width: 600px;
+    border-radius: .6rem;
+
+}
+
+main .container-form .content-form-left h1 {
+    color: #322153;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+main .container-form .content-form-left .inputs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+
+}
+
+main .container-form .content-form-left .inputs label {
+    color: #6c6c80;
+    font-weight: 400;
+}
+
+main .container-form .content-form-left .inputs #input-me {
+    padding: .0vw .3vw;
+}
+
+main .container-form .content-form-left .inputs #input-remetente {
+    padding: .0vw .3vw;
+}
+
+main .container-form .content-form-left .inputs #input-tipo {
+    padding: .0vw .3vw;
+}
+
+main .container-form .content-form-left .inputs #input-categoria {
+    padding: .0vw .3vw;
+}
+
+main .container-form .content-form-left .inputs #input-descricao {
+    padding: 0vw .3vw;
+}
+
+main .container-form .content-form-left .inputs #input-titulo {
+    padding: 0vw .3vw;
+}
+
+main .container-form .content-form-left .inputs #input-file {
+    padding: 0vw .3vw;
+}
+
+main .container-form .content-form-left .inputs input,
+textarea {
+    border: 1px solid rgba(0, 0, 0, 0.075) !important;
+    background-color: #f0f0f5;
+    transition: .3s;
+}
+
+main .container-form .content-form-left .inputs input:focus {
+    background-color: rgb(199, 199, 199);
+}
+
+main .container-form .content-form-left .inputs textarea:focus {
+    background-color: rgb(199, 199, 199);
+}
+
+main .container-form .content-form-left .inputs input#sobre {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: .5rem 0 .5rem .3rem;
+    width: 18vw;
+}
+
+main .container-form .content-form-left .inputs input#type-remetente {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: .5rem 0 .5rem .3rem;
+    width: 18vw;
+}
+
+main .container-form .content-form-left .inputs input#tipo-de-chamado {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: .5rem 0 .5rem .3rem;
+    width: 18vw;
+}
+
+main .container-form .content-form-left .inputs input#tipo-de-categoria {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: .5rem 0 .5rem .3rem;
+    width: 18vw;
+}
+
+main .container-form .content-form-left .inputs input#titulo {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: .5rem 0 .5rem .3rem;
+    width: 36.6vw;
+}
+
+main .container-form .content-form-left .inputs textarea#descricao {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 36.6vw;
+    padding: .3rem 0 0vh .3rem;
+}
+
+main .container-form .content-form-left .inputs input#file {
+    background-color: #fff;
+    border: 1px rgba(0, 0, 0, 0.397) dashed !important;
+    outline: none;
+    border-radius: 8px;
+    width: 36.6vw;
+    height: auto;
+    padding: .5rem;
+    color: rgb(90, 90, 90);
+    cursor: pointer;
+}
+
+main .container-form .content-form-left .inputs .button {
+    display: flex;
+    justify-content: center;
+    padding: .6rem .2rem;
+    margin-top: .5rem;
+    width: 100%;
+}
+
+main .container-form .content-form-left .inputs .button button {
+    padding: .7rem .8rem;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(2, 142, 2);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+main .container-form .content-form-left .inputs .button button:hover {
+    color: rgba(255, 255, 255, 0.774);
+} 
+
+/* main end */

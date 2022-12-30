@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    min-height: 80vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.estrelas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form .box-motivos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem 0;
+}
+form .box-motivos textarea{
+    outline: none;
+    border-radius: 6px;
+    padding: .5rem;
+}
+form .box-motivos input{
+    width: 100%;
+    border: 1px dashed rgba(0, 0, 0, 0.534);
+    padding: .5rem;
+    border-radius: 6px;
+}
+.estrelas input[type=radio] {
+    display: none;
+
+}
+.estrelas label i.fa-solid{
+    font-size: 1.5rem;
+        cursor: pointer;
+}
+.estrelas label i.fa-solid:before {
+
+    color: #FC0;
+}
+
+.estrelas input[type=radio]:checked~label i.fa-solid:before {
+    color: #CCC;
+}
+.buttons-avaliacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1.5rem;
+    margin-top: 1rem;
+}
+.buttons-avaliacao input{
+     border: 1px solid rgba(0, 0, 0, 0.075);
+     cursor: pointer;
+       
+            color: #322153;
+            text-transform: uppercase;
+            padding: .4rem;
+            border-radius: 6px;
+            transition: .2s;
+            font-weight: bold;
+}
+.buttons-avaliacao input:hover{
+    opacity: .5;
+}
+.buttons-avaliacao input:nth-child(1){
+    background-color: red;
+    color: #fff;
+}
+.buttons-avaliacao input:nth-child(2){
+    background-color: green;
+    color: #fff;
+}
